@@ -1,0 +1,29 @@
+@import "colors";
+
+$btn-font-weight: 600;
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1rem;
+$btn-border-radius: 0.7rem;
+$btn-border-radius-sm: 0.55rem;
+$btn-border-radius-lg: 0.8rem;
+$btn-focus-width: 0.2rem;
+$btn-focus-box-shadow: 0 0 0 $btn-focus-width rgba($bn-brand-dark, 0.3);
+$btn-transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease,
+	box-shadow 0.2s ease, transform 0.2s ease;
+
+$btn-primary-color: $bn-brand-text-dark;
+$btn-primary-bg: $bn-brand-dark;
+$btn-primary-border: $bn-brand-dark;
+$btn-primary-hover-color: $bn-brand-text-dark;
+$btn-primary-hover-bg: $bn-brand-hover-dark;
+$btn-primary-hover-border: $bn-brand-hover-dark;
+$btn-primary-active-color: $bn-brand-text-dark;
+$btn-primary-active-bg: $bn-brand-hover-dark;
+$btn-primary-active-border: $bn-brand-hover-dark;
+
+$btn-secondary-color: $bn-btn-sec-text-dark;
+$btn-secondary-bg: $bn-btn-sec-bg-dark;
+$btn-secondary-border: $bn-btn-sec-border-dark;
+$btn-secondary-hover-color: $bn-btn-sec-text-dark;
+$btn-secondary-hover-bg: $bn-btn-sec-hover-bg-dark;
+$btn-secondary-hover-border: $bn-btn-sec-hover-border-dark;

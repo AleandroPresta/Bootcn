@@ -1,0 +1,108 @@
+.bn-page {
+  background:
+    radial-gradient(1200px 600px at 8% -5%, rgba(62, 207, 142, 0.12), transparent 52%),
+    radial-gradient(1000px 540px at 92% 0%, rgba(36, 180, 126, 0.08), transparent 58%),
+    linear-gradient(180deg, #0b0f0e 0%, #0d1110 100%);
+  min-height: 100vh;
+}
+
+.bn-cheatsheet-header {
+  border: 1px solid rgba(139, 139, 139, 0.2);
+  border-radius: 1rem;
+  background: linear-gradient(160deg, rgba(20, 20, 20, 0.92), rgba(12, 12, 12, 0.92));
+  box-shadow: 0 1.4rem 3rem rgba(0, 0, 0, 0.35);
+}
+
+.bn-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(62, 207, 142, 0.35);
+  color: #9fe3c6;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.bn-toc {
+  backdrop-filter: blur(10px);
+  background-color: rgba(12, 12, 12, 0.7);
+  border-bottom: 1px solid rgba(139, 139, 139, 0.15);
+}
+
+.bn-toc .nav-link {
+  color: #b9b9b9;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+}
+
+.bn-toc .nav-link:hover,
+.bn-toc .nav-link:focus-visible {
+  color: #ededed;
+  border-color: rgba(62, 207, 142, 0.35);
+  background-color: rgba(62, 207, 142, 0.12);
+}
+
+.bn-section-title {
+  letter-spacing: 0.02em;
+}
+
+.bn-demo-card {
+  border: 1px solid rgba(139, 139, 139, 0.22);
+  border-radius: 0.95rem;
+  background: rgba(20, 20, 20, 0.78);
+}
+
+.bn-demo-surface {
+  border-radius: 0.8rem;
+  border: 1px dashed rgba(139, 139, 139, 0.35);
+  background: linear-gradient(150deg, rgba(24, 24, 24, 0.75), rgba(18, 18, 18, 0.9));
+}
+
+.btn {
+  letter-spacing: 0.01em;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  box-shadow: 0 0.5rem 1.4rem rgba(62, 207, 142, 0.22);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0.85rem 1.8rem rgba(62, 207, 142, 0.28);
+}
+
+.btn-secondary {
+  box-shadow: inset 0 0 0 1px rgba(237, 237, 237, 0.02);
+}
+
+.btn-danger {
+  color: #fca5a5;
+  background-color: #271415;
+  border-color: #481a1d;
+}
+
+.btn-danger:hover,
+.btn-danger:focus-visible,
+.btn-danger:active,
+.btn-danger.active,
+.show > .btn-danger.dropdown-toggle {
+  color: #ffd6d6;
+  background-color: #3f181c;
+  border-color: #7f1d1d;
+}
+
+.bn-placeholder {
+  color: #8b8b8b;
+  border-style: dashed;
+}

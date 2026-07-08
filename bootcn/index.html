@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootcn Supabase Dashboard Cheatsheet</title>
+
+  <!-- Type pairing for a crisp dashboard voice -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons CDN for sleek vector iconography -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body class="bn-page">
+  <nav class="navbar navbar-expand-lg sticky-top bn-toc">
+    <div class="container-xxl">
+      <a class="navbar-brand fw-semibold" href="#top">Bootcn Cheatsheet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bnTocNav"
+        aria-controls="bnTocNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="bnTocNav">
+        <ul class="navbar-nav ms-lg-auto gap-lg-1 small">
+          <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+          <li class="nav-item"><a class="nav-link" href="#alerts">Alerts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#badges">Badges</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cards">Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#navigation">Navigation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="#overlays">Overlays</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top" class="container-xxl py-4 py-lg-5">
+    <header class="bn-cheatsheet-header bn-animate-enter p-4 p-lg-5 mb-4 mb-lg-5">
+      <div class="d-flex flex-column flex-lg-row justify-content-between gap-4">
+        <div>
+          <span class="bn-kicker mb-3"><i data-lucide="database" aria-hidden="true"></i> Supabase-inspired</span>
+          <h1 class="display-5 fw-semibold mb-3">Bootstrap component lab for dashboard UI</h1>
+          <p class="text-secondary mb-0 col-lg-10">Dark-first component overrides, verified one component at a time.
+            Buttons are implemented first. Every other section is scaffolded for incremental rollout and feedback.</p>
+        </div>
+        <div class="bn-demo-card p-3 p-lg-4 align-self-start">
+          <p class="text-uppercase small text-secondary mb-2">Current increment</p>
+          <p class="h4 mb-2">01. Buttons</p>
+          <p class="small text-secondary mb-0">Next after approval: Button groups, then Close button.</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="roadmap" class="mb-5 pb-2">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+          <h2 class="bn-section-title h3 mb-1">Incremental override roadmap</h2>
+          <p class="text-secondary mb-0">Every Bootstrap component is implemented one at a time and reviewed before moving on.</p>
+        </div>
+      </div>
+      <article class="bn-demo-card p-3 p-lg-4">
+        <ol class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2 mb-0 ps-3">
+          <li class="text-success">Buttons <span class="badge text-bg-success ms-2">done</span></li>
+          <li>Button group</li>
+          <li>Close button</li>
+          <li>Alerts</li>
+          <li>Badges</li>
+          <li>Breadcrumb</li>
+          <li>Cards</li>
+          <li>Dropdowns</li>
+          <li>List group</li>
+          <li>Pagination</li>
+          <li>Progress</li>
+          <li>Spinners</li>
+          <li>Placeholders</li>
+          <li>Accordion</li>
+          <li>Collapse</li>
+          <li>Modal</li>
+          <li>Offcanvas</li>
+          <li>Navbar</li>
+          <li>Navs and tabs</li>
+          <li>Scrollspy</li>
+          <li>Toasts</li>
+          <li>Tooltips</li>
+          <li>Popovers</li>
+          <li>Carousel</li>
+          <li>Forms: form control</li>
+          <li>Forms: select</li>
+          <li>Forms: checks and radios</li>
+          <li>Forms: range</li>
+          <li>Forms: input group</li>
+          <li>Forms: floating labels</li>
+          <li>Forms: validation</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="buttons" class="mb-5 pb-2">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+          <h2 class="bn-section-title h3 mb-1">Buttons</h2>
+          <p class="text-secondary mb-0">Primary action hierarchy and state behavior for dashboard workflows.</p>
+        </div>
+        <span class="badge text-bg-success">implemented</span>
+      </div>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Core variants</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap align-items-center gap-2">
+          <button type="button" class="btn btn-primary bn-animate-glow">Create project</button>
+          <button type="button" class="btn btn-secondary">View logs</button>
+          <button type="button" class="btn btn-danger">Revoke key</button>
+          <button type="button" class="btn btn-outline-primary">Preview SQL</button>
+          <button type="button" class="btn btn-outline-light">Ghost action</button>
+          <button type="button" class="btn btn-link">Open docs</button>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Sizes and icon affordance</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap align-items-center gap-2">
+          <button type="button" class="btn btn-primary btn-sm">Small</button>
+          <button type="button" class="btn btn-primary">Default</button>
+          <button type="button" class="btn btn-primary btn-lg">Large</button>
+          <button type="button" class="btn btn-secondary d-inline-flex align-items-center gap-2">
+            <i data-lucide="terminal-square" aria-hidden="true"></i>
+            Open console
+          </button>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Disabled and semantic states</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap align-items-center gap-2">
+          <button type="button" class="btn btn-primary" disabled>Deploying...</button>
+          <button type="button" class="btn btn-secondary" disabled>Read-only mode</button>
+          <button type="button" class="btn btn-danger" disabled>Restricted</button>
+          <a class="btn btn-outline-primary disabled" role="button" aria-disabled="true">Queued</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="alerts" class="mb-4">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="bn-section-title h4 mb-0">Alerts</h2>
+        <span class="badge text-bg-secondary">up next</span>
+      </div>
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for the next incremental override.</article>
+    </section>
+
+    <section id="badges" class="mb-4">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="bn-section-title h4 mb-0">Badges</h2>
+        <span class="badge text-bg-secondary">planned</span>
+      </div>
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for incremental badge variants.</article>
+    </section>
+
+    <section id="cards" class="mb-4">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="bn-section-title h4 mb-0">Cards</h2>
+        <span class="badge text-bg-secondary">planned</span>
+      </div>
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for content and metrics card patterns.</article>
+    </section>
+
+    <section id="forms" class="mb-4">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="bn-section-title h4 mb-0">Forms</h2>
+        <span class="badge text-bg-secondary">planned</span>
+      </div>
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for controls, select, checks, input groups, and validation.</article>
+    </section>
+
+    <section id="navigation" class="mb-4">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="bn-section-title h4 mb-0">Navigation Components</h2>
+        <span class="badge text-bg-secondary">planned</span>
+      </div>
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for navs, tabs, navbar, breadcrumb, and pagination.</article>
+    </section>
+
+    <section id="feedback" class="mb-4">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="bn-section-title h4 mb-0">Feedback Components</h2>
+        <span class="badge text-bg-secondary">planned</span>
+      </div>
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for progress, spinners, toasts, and placeholders.</article>
+    </section>
+
+    <section id="overlays" class="mb-2">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h2 class="bn-section-title h4 mb-0">Overlay and Disclosure Components</h2>
+        <span class="badge text-bg-secondary">planned</span>
+      </div>
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for modal, offcanvas, dropdown, accordion, popover, tooltip, and carousel.</article>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

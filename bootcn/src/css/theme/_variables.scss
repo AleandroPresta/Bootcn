@@ -1,0 +1,9 @@
+@import "typography";
+
+$font-family-sans-serif: $bn-font-sans;
+$font-family-monospace: $bn-font-mono;
+
+@import "colors";
+
+$primary: $bn-brand;
+$secondary: $bn-btn-sec-bg-dark;
