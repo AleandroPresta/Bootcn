@@ -53,8 +53,8 @@
         </div>
         <div class="bn-demo-card p-3 p-lg-4 align-self-start">
           <p class="text-uppercase small text-secondary mb-2">Current increment</p>
-          <p class="h4 mb-2">08-10. Navigation flow</p>
-          <p class="small text-secondary mb-0">Added Dropdowns, List group, and Pagination component coverage.</p>
+          <p class="h4 mb-2">21-24. Overlay polish</p>
+          <p class="small text-secondary mb-0">Added Toasts, Tooltips, Popovers, and Carousel coverage.</p>
         </div>
       </div>
     </header>
@@ -78,27 +78,27 @@
           <li class="text-success">Dropdowns <span class="badge text-bg-success ms-2">done</span></li>
           <li class="text-success">List group <span class="badge text-bg-success ms-2">done</span></li>
           <li class="text-success">Pagination <span class="badge text-bg-success ms-2">done</span></li>
-          <li>Progress</li>
-          <li>Spinners</li>
-          <li>Placeholders</li>
-          <li>Accordion</li>
-          <li>Collapse</li>
-          <li>Modal</li>
-          <li>Offcanvas</li>
-          <li>Navbar</li>
-          <li>Navs and tabs</li>
-          <li>Scrollspy</li>
-          <li>Toasts</li>
-          <li>Tooltips</li>
-          <li>Popovers</li>
-          <li>Carousel</li>
-          <li>Forms: form control</li>
-          <li>Forms: select</li>
-          <li>Forms: checks and radios</li>
-          <li>Forms: range</li>
-          <li>Forms: input group</li>
-          <li>Forms: floating labels</li>
-          <li>Forms: validation</li>
+          <li class="text-success">Progress <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Spinners <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Placeholders <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Accordion <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Collapse <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Modal <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Offcanvas <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Navbar <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Navs and tabs <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Scrollspy <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Toasts <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Tooltips <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Popovers <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Carousel <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Forms: form control <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Forms: select <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Forms: checks and radios <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Forms: range <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Forms: input group <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Forms: floating labels <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Forms: validation <span class="badge text-bg-success ms-2">done</span></li>
         </ol>
       </article>
     </section>
@@ -249,9 +249,103 @@
     <section id="forms" class="mb-4">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Forms</h2>
-        <span class="badge text-bg-secondary">planned</span>
+        <span class="badge text-bg-success">implemented</span>
       </div>
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for controls, select, checks, input groups, and validation.</article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Form control and select</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div class="row g-3">
+            <div class="col-12 col-lg-6">
+              <label for="bnEmail" class="form-label">Project email</label>
+              <input type="email" class="form-control" id="bnEmail" placeholder="team@project.com">
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="bnRegion" class="form-label">Primary region</label>
+              <select class="form-select" id="bnRegion" aria-label="Primary region select">
+                <option selected>eu-west-1</option>
+                <option>us-east-1</option>
+                <option>ap-southeast-1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Checks, radios, and range</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div class="row g-3">
+            <div class="col-12 col-lg-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="bnCheck1" checked>
+                <label class="form-check-label" for="bnCheck1">Enable read replicas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="bnCheck2">
+                <label class="form-check-label" for="bnCheck2">Send outage notifications</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="radio" name="bnPlan" id="bnPlanStarter" checked>
+                <label class="form-check-label" for="bnPlanStarter">Starter plan</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="bnPlan" id="bnPlanPro">
+                <label class="form-check-label" for="bnPlanPro">Pro plan</label>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="bnThrottle" class="form-label">Rate limit threshold</label>
+              <input type="range" class="form-range" min="0" max="100" id="bnThrottle" value="64">
+              <div class="d-flex justify-content-between small text-secondary">
+                <span>0</span><span>100</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Input group and floating labels</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div class="row g-3">
+            <div class="col-12 col-lg-6">
+              <label for="bnApiName" class="form-label">API key name</label>
+              <div class="input-group">
+                <span class="input-group-text" id="bnApiKeyPrefix">key_</span>
+                <input type="text" class="form-control" id="bnApiName" aria-describedby="bnApiKeyPrefix" placeholder="analytics-service">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a note" id="bnNotes" style="height: 100px"></textarea>
+                <label for="bnNotes">Maintenance note</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Validation</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <form class="row g-3 was-validated" novalidate>
+            <div class="col-md-6">
+              <label for="bnValidName" class="form-label">Workspace name</label>
+              <input type="text" class="form-control" id="bnValidName" value="prod-dashboard" required>
+              <div class="valid-feedback">Looks good.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="bnInvalidSlug" class="form-label">Public slug</label>
+              <input type="text" class="form-control is-invalid" id="bnInvalidSlug" value="" required>
+              <div class="invalid-feedback">Please provide a unique slug.</div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Save settings</button>
+            </div>
+          </form>
+        </div>
+      </article>
     </section>
 
     <section id="navigation" class="mb-4">
@@ -259,6 +353,27 @@
         <h2 class="bn-section-title h4 mb-0">Navigation Components</h2>
         <span class="badge text-bg-success">implemented</span>
       </div>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Navbar</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <nav class="navbar navbar-expand-lg navbar-dark bn-section-navbar px-3">
+            <a class="navbar-brand" href="#">Project Nova</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bnNavBarDemo" aria-controls="bnNavBarDemo" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bnNavBarDemo">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Database</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Auth</a></li>
+              </ul>
+              <button class="btn btn-outline-primary btn-sm">Invite member</button>
+            </div>
+          </nav>
+        </div>
+      </article>
+
       <article class="bn-demo-card p-3 p-lg-4 mb-3">
         <h3 class="h6 text-uppercase text-secondary mb-3">Breadcrumb</h3>
         <div class="bn-demo-surface p-3 p-lg-4">
@@ -269,6 +384,61 @@
               <li class="breadcrumb-item active" aria-current="page">Connections</li>
             </ol>
           </nav>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Navs and tabs</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <ul class="nav nav-tabs mb-3" id="bnTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="bn-home-tab" data-bs-toggle="tab" data-bs-target="#bn-home-tab-pane" type="button" role="tab" aria-controls="bn-home-tab-pane" aria-selected="true">Overview</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="bn-profile-tab" data-bs-toggle="tab" data-bs-target="#bn-profile-tab-pane" type="button" role="tab" aria-controls="bn-profile-tab-pane" aria-selected="false">Backups</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="bn-contact-tab" data-bs-toggle="tab" data-bs-target="#bn-contact-tab-pane" type="button" role="tab" aria-controls="bn-contact-tab-pane" aria-selected="false">Usage</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="bnTabsContent">
+            <div class="tab-pane fade show active" id="bn-home-tab-pane" role="tabpanel" aria-labelledby="bn-home-tab" tabindex="0">Overview tab content with health indicators.</div>
+            <div class="tab-pane fade" id="bn-profile-tab-pane" role="tabpanel" aria-labelledby="bn-profile-tab" tabindex="0">Backup retention and restore points.</div>
+            <div class="tab-pane fade" id="bn-contact-tab-pane" role="tabpanel" aria-labelledby="bn-contact-tab" tabindex="0">Usage charts and quota thresholds.</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Scrollspy</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div class="row g-3">
+            <div class="col-12 col-lg-4">
+              <nav id="bnScrollspyNav" class="h-100 flex-column align-items-stretch pe-2 bn-scrollspy-nav">
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link" href="#scrollspy-item-1">Region health</a>
+                  <a class="nav-link" href="#scrollspy-item-2">Query queue</a>
+                  <a class="nav-link" href="#scrollspy-item-3">Storage growth</a>
+                </nav>
+              </nav>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div data-bs-spy="scroll" data-bs-target="#bnScrollspyNav" data-bs-smooth-scroll="true" class="bn-scrollspy-box" tabindex="0">
+                <section id="scrollspy-item-1">
+                  <h6>Region health</h6>
+                  <p class="small text-secondary mb-0">Latency remains under 40ms in eu-west and us-east.</p>
+                </section>
+                <section id="scrollspy-item-2">
+                  <h6>Query queue</h6>
+                  <p class="small text-secondary mb-0">Background queue is processing 58 jobs/minute.</p>
+                </section>
+                <section id="scrollspy-item-3">
+                  <h6>Storage growth</h6>
+                  <p class="small text-secondary mb-0">Projected +12% growth this week based on import trend.</p>
+                </section>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
 
@@ -315,15 +485,72 @@
     <section id="feedback" class="mb-4">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Feedback Components</h2>
-        <span class="badge text-bg-secondary">planned</span>
+        <span class="badge text-bg-success">implemented</span>
       </div>
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for progress, spinners, toasts, and placeholders.</article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Progress</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-grid gap-3">
+          <div>
+            <div class="d-flex justify-content-between small text-secondary mb-1">
+              <span>Storage migration</span>
+              <span>78%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Storage migration" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 78%">78%</div>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex justify-content-between small text-secondary mb-1">
+              <span>Background workers</span>
+              <span>42%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Background workers" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 42%"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Spinners</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap align-items-center gap-3">
+          <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-grow text-success" role="status"><span class="visually-hidden">Loading...</span></div>
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            Connecting
+          </button>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Placeholders</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div class="card" aria-hidden="true">
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-5" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
 
     <section id="overlays" class="mb-2">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Overlay and Disclosure Components</h2>
-        <span class="badge text-bg-warning">partial</span>
+        <span class="badge text-bg-success">implemented</span>
       </div>
       <article class="bn-demo-card p-3 p-lg-4 mb-3">
         <h3 class="h6 text-uppercase text-secondary mb-3">Dropdowns</h3>
@@ -356,7 +583,187 @@
         </div>
       </article>
 
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for modal, offcanvas, accordion, popover, tooltip, and carousel.</article>
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Accordion</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div class="accordion" id="bnAccordionDemo">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bnAccOne" aria-expanded="true" aria-controls="bnAccOne">
+                  Connection pool sizing
+                </button>
+              </h2>
+              <div id="bnAccOne" class="accordion-collapse collapse show" data-bs-parent="#bnAccordionDemo">
+                <div class="accordion-body">Use 20 baseline connections and scale with p95 query latency.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bnAccTwo" aria-expanded="false" aria-controls="bnAccTwo">
+                  Region failover policy
+                </button>
+              </h2>
+              <div id="bnAccTwo" class="accordion-collapse collapse" data-bs-parent="#bnAccordionDemo">
+                <div class="accordion-body">Promote standby after 3 failed health checks over 90 seconds.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Collapse</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <p class="d-inline-flex gap-2 mb-3">
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bnCollapseDemo" aria-expanded="false" aria-controls="bnCollapseDemo">
+              Toggle query details
+            </button>
+          </p>
+          <div class="collapse" id="bnCollapseDemo">
+            <div class="bn-collapse-panel p-3">
+              <p class="mb-2">Estimated rows: <strong>128,420</strong></p>
+              <p class="small text-secondary mb-0">Index scan on users_email_idx, cost 12.04..320.19</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Modal</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex justify-content-start">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bnModalDemo">
+            Open maintenance modal
+          </button>
+        </div>
+
+        <div class="modal fade" id="bnModalDemo" tabindex="-1" aria-labelledby="bnModalDemoLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="bnModalDemoLabel">Schedule maintenance window</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Apply read-only mode at 02:30 UTC and notify connected clients.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Confirm schedule</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Offcanvas</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex justify-content-start">
+          <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#bnOffcanvasDemo" aria-controls="bnOffcanvasDemo">
+            Open environment panel
+          </button>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="bnOffcanvasDemo" aria-labelledby="bnOffcanvasDemoLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="bnOffcanvasDemoLabel">Environment settings</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-grid gap-3">
+            <div>
+              <label class="form-label" for="bnRegionSelect">Region</label>
+              <select class="form-select" id="bnRegionSelect">
+                <option selected>eu-west-1</option>
+                <option>us-east-1</option>
+                <option>ap-southeast-1</option>
+              </select>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="bnReplicaSwitch" checked>
+              <label class="form-check-label" for="bnReplicaSwitch">Enable read replicas</label>
+            </div>
+            <button type="button" class="btn btn-primary">Save environment</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Toasts</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap gap-3 align-items-start">
+          <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">Deployment bot</strong>
+              <small>just now</small>
+              <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Migration completed successfully on primary and replica nodes.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Tooltips and Popovers</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Estimated execution time: 120ms">
+            Hover for tooltip
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-title="Connection details" data-bs-content="Pool size: 20, idle timeout: 30s, SSL mode: required.">
+            Click for popover
+          </button>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Carousel</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div id="bnCarouselDemo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#bnCarouselDemo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#bnCarouselDemo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#bnCarouselDemo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                  <div class="carousel-caption d-block">
+                    <h5 class="mb-1">Incident timeline</h5>
+                    <p class="small mb-0">Zoom through critical timeline checkpoints.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                  <div class="carousel-caption d-block">
+                    <h5 class="mb-1">Storage projection</h5>
+                    <p class="small mb-0">Visualize weekly growth before quota alerts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                  <div class="carousel-caption d-block">
+                    <h5 class="mb-1">Region health</h5>
+                    <p class="small mb-0">Compare latency and throughput by region.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bnCarouselDemo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bnCarouselDemo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4">
+        <p class="small text-secondary mb-0">Overlay and disclosure family complete. Next block is the forms cluster.</p>
+      </article>
     </section>
   </main>
 

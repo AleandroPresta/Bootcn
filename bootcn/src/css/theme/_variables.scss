@@ -62,3 +62,75 @@ $pagination-active-color: $bn-brand-text-dark;
 $pagination-focus-color: $bn-text-main-dark;
 $pagination-focus-bg: $bn-bg-card-hover-dark;
 $pagination-focus-box-shadow: 0 0 0 0.2rem rgba($bn-brand-dark, 0.2);
+
+$accordion-bg: $bn-bg-card-dark;
+$accordion-color: $bn-text-main-dark;
+$accordion-border-color: $bn-border-color-dark;
+$accordion-button-bg: $bn-bg-card-dark;
+$accordion-button-color: $bn-text-main-dark;
+$accordion-button-active-bg: rgba($bn-brand-dark, 0.12);
+$accordion-button-active-color: $bn-text-main-dark;
+$accordion-button-focus-border-color: rgba($bn-brand-dark, 0.45);
+$accordion-button-focus-box-shadow: 0 0 0 0.2rem rgba($bn-brand-dark, 0.2);
+
+$modal-content-bg: $bn-bg-card-dark;
+$modal-content-color: $bn-text-main-dark;
+$modal-content-border-color: $bn-border-color-dark;
+$modal-header-border-color: rgba($bn-border-color-dark, 0.9);
+$modal-footer-border-color: rgba($bn-border-color-dark, 0.9);
+
+$offcanvas-bg-color: $bn-bg-card-dark;
+$offcanvas-color: $bn-text-main-dark;
+$offcanvas-border-color: $bn-border-color-dark;
+$offcanvas-horizontal-width: min(420px, 90vw);
+
+$navbar-dark-color: rgba($bn-text-main-dark, 0.85);
+$navbar-dark-hover-color: $bn-text-main-dark;
+$navbar-dark-active-color: $bn-text-main-dark;
+$navbar-dark-brand-color: $bn-text-main-dark;
+$navbar-dark-brand-hover-color: $bn-text-main-dark;
+
+$nav-link-color: rgba($bn-text-main-dark, 0.8);
+$nav-link-hover-color: $bn-text-main-dark;
+
+$nav-tabs-border-color: rgba($bn-border-color-dark, 0.85);
+$nav-tabs-link-hover-border-color: rgba($bn-border-color-hover-dark, 0.9);
+$nav-tabs-link-active-color: $bn-text-main-dark;
+$nav-tabs-link-active-bg: rgba($bn-bg-card-hover-dark, 0.9);
+$nav-tabs-link-active-border-color: rgba($bn-border-color-hover-dark, 0.95);
+
+$toast-background-color: rgba($bn-bg-card-dark, 0.95);
+$toast-border-color: rgba($bn-border-color-dark, 0.95);
+$toast-header-background-color: rgba($bn-bg-card-hover-dark, 0.95);
+$toast-header-color: $bn-text-muted-dark;
+
+$carousel-indicator-active-bg: $bn-brand-dark;
+$carousel-caption-color: $bn-text-main-dark;
+
+$input-bg: $bn-bg-card-dark;
+$input-color: $bn-text-main-dark;
+$input-border-color: $bn-border-color-dark;
+$input-placeholder-color: $bn-text-muted-dark;
+$input-focus-bg: $bn-bg-card-hover-dark;
+$input-focus-border-color: rgba($bn-brand-dark, 0.6);
+$input-focus-box-shadow: 0 0 0 0.2rem rgba($bn-brand-dark, 0.2);
+
+$form-select-bg: $bn-bg-card-dark;
+$form-select-color: $bn-text-main-dark;
+$form-select-border-color: $bn-border-color-dark;
+$form-select-focus-border-color: rgba($bn-brand-dark, 0.6);
+
+$form-check-input-bg: $bn-bg-card-dark;
+$form-check-input-border: 1px solid rgba($bn-border-color-dark, 0.95);
+$form-check-input-checked-bg-color: $bn-brand-dark;
+$form-check-input-checked-border-color: $bn-brand-dark;
+
+$input-group-addon-bg: $bn-bg-card-hover-dark;
+$input-group-addon-color: $bn-text-muted-dark;
+$input-group-addon-border-color: $bn-border-color-dark;
+
+$form-range-thumb-bg: $bn-brand-dark;
+$form-range-thumb-active-bg: rgba($bn-brand-dark, 0.65);
+$form-range-track-bg: rgba($bn-border-color-dark, 0.9);
+
+$form-floating-label-opacity: 0.75;
