@@ -7,3 +7,58 @@ $font-family-monospace: $bn-font-mono;
 
 $primary: $bn-brand;
 $secondary: $bn-btn-sec-bg-dark;
+$success: #2baa73;
+$info: #2f9eb2;
+$warning: #f3c45f;
+$danger: #c85b5f;
+
+$body-bg: $bn-bg-main-dark;
+$body-color: $bn-text-main-dark;
+
+$card-bg: $bn-bg-card-dark;
+$card-color: $bn-text-main-dark;
+$card-border-color: $bn-border-color-dark;
+$card-border-radius: 0.95rem;
+$card-cap-bg: $bn-bg-card-hover-dark;
+
+$badge-font-size: 0.72em;
+$badge-font-weight: 600;
+$badge-padding-y: 0.42em;
+$badge-padding-x: 0.65em;
+$badge-border-radius: 0.45rem;
+
+$alert-border-width: 1px;
+$alert-border-radius: 0.9rem;
+
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: $bn-text-muted-dark;
+$breadcrumb-active-color: $bn-text-main-dark;
+
+$dropdown-bg: $bn-bg-card-dark;
+$dropdown-border-color: $bn-border-color-dark;
+$dropdown-link-color: $bn-text-main-dark;
+$dropdown-link-hover-color: $bn-text-main-dark;
+$dropdown-link-hover-bg: $bn-bg-card-hover-dark;
+$dropdown-link-active-color: $bn-brand-text-dark;
+$dropdown-link-active-bg: $bn-brand-dark;
+
+$list-group-bg: $bn-bg-card-dark;
+$list-group-color: $bn-text-main-dark;
+$list-group-border-color: $bn-border-color-dark;
+$list-group-hover-bg: $bn-bg-card-hover-dark;
+$list-group-active-bg: rgba($bn-brand-dark, 0.2);
+$list-group-active-border-color: rgba($bn-brand-dark, 0.5);
+$list-group-active-color: $bn-text-main-dark;
+
+$pagination-bg: $bn-bg-card-dark;
+$pagination-color: $bn-text-main-dark;
+$pagination-border-color: $bn-border-color-dark;
+$pagination-hover-bg: $bn-bg-card-hover-dark;
+$pagination-hover-color: $bn-text-main-dark;
+$pagination-hover-border-color: $bn-border-color-hover-dark;
+$pagination-active-bg: $bn-brand-dark;
+$pagination-active-border-color: $bn-brand-dark;
+$pagination-active-color: $bn-brand-text-dark;
+$pagination-focus-color: $bn-text-main-dark;
+$pagination-focus-bg: $bn-bg-card-hover-dark;
+$pagination-focus-box-shadow: 0 0 0 0.2rem rgba($bn-brand-dark, 0.2);

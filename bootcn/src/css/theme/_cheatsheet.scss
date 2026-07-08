@@ -106,3 +106,112 @@
   color: #8b8b8b;
   border-style: dashed;
 }
+
+.btn-group .btn,
+.btn-group-vertical .btn {
+  box-shadow: none;
+}
+
+.btn-close {
+  background-color: rgba(24, 24, 24, 0.8);
+  border: 1px solid rgba(139, 139, 139, 0.35);
+  border-radius: 0.5rem;
+  opacity: 0.75;
+  filter: invert(1) grayscale(1) brightness(1.8);
+}
+
+.btn-close:hover,
+.btn-close:focus-visible {
+  opacity: 1;
+  border-color: rgba(62, 207, 142, 0.55);
+  box-shadow: 0 0 0 0.2rem rgba(62, 207, 142, 0.18);
+}
+
+.alert {
+  border-radius: 0.9rem;
+  border-width: 1px;
+}
+
+.alert .alert-link {
+  color: inherit;
+}
+
+.badge.text-bg-secondary {
+  background-color: #2a2a2a !important;
+  color: #dedede !important;
+}
+
+.badge.bg-outline {
+  color: #9fe3c6;
+  background-color: rgba(62, 207, 142, 0.1);
+  border: 1px solid rgba(62, 207, 142, 0.45);
+}
+
+.card {
+  background: linear-gradient(165deg, rgba(23, 23, 23, 0.94), rgba(17, 17, 17, 0.96));
+  border: 1px solid rgba(139, 139, 139, 0.23);
+  box-shadow: 0 0.8rem 1.8rem rgba(0, 0, 0, 0.24);
+}
+
+.card .card-header,
+.card .card-footer {
+  border-color: rgba(139, 139, 139, 0.2);
+  background-color: rgba(31, 31, 31, 0.78);
+}
+
+.bn-metric {
+  font-size: clamp(1.4rem, 1.2rem + 1vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #8b8b8b;
+}
+
+.breadcrumb-item.active {
+  color: #ededed;
+}
+
+.dropdown-menu {
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.28);
+}
+
+.dropdown-header {
+  color: #8b8b8b;
+}
+
+.dropdown-item {
+  border-radius: 0.55rem;
+}
+
+.dropdown-item:active {
+  font-weight: 600;
+}
+
+.list-group-item {
+  background: rgba(19, 19, 19, 0.85);
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+  background: rgba(33, 33, 33, 0.95);
+}
+
+.list-group-item.active {
+  box-shadow: inset 0 0 0 1px rgba(62, 207, 142, 0.35);
+}
+
+.pagination {
+  margin-bottom: 0;
+}
+
+.page-link {
+  min-width: 2.4rem;
+  text-align: center;
+}

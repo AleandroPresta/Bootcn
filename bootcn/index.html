@@ -53,8 +53,8 @@
         </div>
         <div class="bn-demo-card p-3 p-lg-4 align-self-start">
           <p class="text-uppercase small text-secondary mb-2">Current increment</p>
-          <p class="h4 mb-2">01. Buttons</p>
-          <p class="small text-secondary mb-0">Next after approval: Button groups, then Close button.</p>
+          <p class="h4 mb-2">08-10. Navigation flow</p>
+          <p class="small text-secondary mb-0">Added Dropdowns, List group, and Pagination component coverage.</p>
         </div>
       </div>
     </header>
@@ -69,15 +69,15 @@
       <article class="bn-demo-card p-3 p-lg-4">
         <ol class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2 mb-0 ps-3">
           <li class="text-success">Buttons <span class="badge text-bg-success ms-2">done</span></li>
-          <li>Button group</li>
-          <li>Close button</li>
-          <li>Alerts</li>
-          <li>Badges</li>
-          <li>Breadcrumb</li>
-          <li>Cards</li>
-          <li>Dropdowns</li>
-          <li>List group</li>
-          <li>Pagination</li>
+          <li class="text-success">Button group <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Close button <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Alerts <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Badges <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Breadcrumb <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Cards <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Dropdowns <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">List group <span class="badge text-bg-success ms-2">done</span></li>
+          <li class="text-success">Pagination <span class="badge text-bg-success ms-2">done</span></li>
           <li>Progress</li>
           <li>Spinners</li>
           <li>Placeholders</li>
@@ -146,30 +146,104 @@
           <a class="btn btn-outline-primary disabled" role="button" aria-disabled="true">Queued</a>
         </div>
       </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mt-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Button groups and close button</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-column gap-3">
+          <div class="d-flex flex-wrap gap-3 align-items-center">
+            <div class="btn-group" role="group" aria-label="Row actions">
+              <button type="button" class="btn btn-secondary">Overview</button>
+              <button type="button" class="btn btn-secondary">Policies</button>
+              <button type="button" class="btn btn-secondary">Integrations</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Primary actions">
+              <button type="button" class="btn btn-outline-primary">Save draft</button>
+              <button type="button" class="btn btn-primary">Publish</button>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between border rounded-3 px-3 py-2">
+            <span class="small text-secondary">Close button sample inside dismissible surfaces</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+        </div>
+      </article>
     </section>
 
-    <section id="alerts" class="mb-4">
+    <section id="alerts" class="mb-5 pb-2">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Alerts</h2>
-        <span class="badge text-bg-secondary">up next</span>
+        <span class="badge text-bg-success">implemented</span>
       </div>
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for the next incremental override.</article>
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Status messaging</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-grid gap-2">
+          <div class="alert alert-success d-flex align-items-center justify-content-between mb-0" role="alert">
+            <div>
+              Replication is healthy in all regions.
+              <a href="#" class="alert-link">Inspect metrics</a>
+            </div>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-info mb-0" role="alert">API gateway updated 3 minutes ago.</div>
+          <div class="alert alert-warning mb-0" role="alert">2 policies need manual confirmation.</div>
+          <div class="alert alert-danger mb-0" role="alert">Service key exposed in a public gist. Rotate immediately.</div>
+        </div>
+      </article>
     </section>
 
-    <section id="badges" class="mb-4">
+    <section id="badges" class="mb-5 pb-2">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Badges</h2>
-        <span class="badge text-bg-secondary">planned</span>
+        <span class="badge text-bg-success">implemented</span>
       </div>
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for incremental badge variants.</article>
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Entity state and counts</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap align-items-center gap-2">
+          <span class="badge text-bg-primary">Active</span>
+          <span class="badge text-bg-secondary">Paused</span>
+          <span class="badge text-bg-success">Synced</span>
+          <span class="badge text-bg-warning">Pending review</span>
+          <span class="badge text-bg-danger">Failed</span>
+          <span class="badge rounded-pill bg-outline">Read replicas: 5</span>
+        </div>
+      </article>
     </section>
 
-    <section id="cards" class="mb-4">
+    <section id="cards" class="mb-5 pb-2">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Cards</h2>
-        <span class="badge text-bg-secondary">planned</span>
+        <span class="badge text-bg-success">implemented</span>
       </div>
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for content and metrics card patterns.</article>
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Metric and feed layouts</h3>
+        <div class="row g-3">
+          <div class="col-12 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p class="text-secondary small text-uppercase mb-2">Database uptime</p>
+                <p class="bn-metric mb-2">99.982%</p>
+                <p class="text-secondary small mb-0">30-day rolling average</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="card h-100">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Recent activity</span>
+                <span class="badge text-bg-secondary">live</span>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled mb-0 d-grid gap-2">
+                  <li class="d-flex justify-content-between"><span>Edge function deployed</span><small class="text-secondary">2m</small></li>
+                  <li class="d-flex justify-content-between"><span>Storage policy updated</span><small class="text-secondary">9m</small></li>
+                  <li class="d-flex justify-content-between"><span>New API key issued</span><small class="text-secondary">18m</small></li>
+                </ul>
+              </div>
+              <div class="card-footer small text-secondary">12 events in the last hour</div>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
 
     <section id="forms" class="mb-4">
@@ -183,9 +257,59 @@
     <section id="navigation" class="mb-4">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Navigation Components</h2>
-        <span class="badge text-bg-secondary">planned</span>
+        <span class="badge text-bg-success">implemented</span>
       </div>
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for navs, tabs, navbar, breadcrumb, and pagination.</article>
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Breadcrumb</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Projects</a></li>
+              <li class="breadcrumb-item"><a href="#">Realtime Dashboard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Connections</li>
+            </ol>
+          </nav>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">List group</h3>
+        <div class="bn-demo-surface p-3 p-lg-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              API usage
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+              Auth logs
+              <span class="badge text-bg-secondary rounded-pill">18</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+              Incident timeline
+              <span class="badge text-bg-warning rounded-pill">2</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">
+              Archived snapshots
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card p-3 p-lg-4">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Pagination</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex justify-content-center">
+          <nav aria-label="Event stream pages">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </article>
     </section>
 
     <section id="feedback" class="mb-4">
@@ -199,9 +323,40 @@
     <section id="overlays" class="mb-2">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h2 class="bn-section-title h4 mb-0">Overlay and Disclosure Components</h2>
-        <span class="badge text-bg-secondary">planned</span>
+        <span class="badge text-bg-warning">partial</span>
       </div>
-      <article class="bn-demo-card bn-placeholder p-4">Placeholder for modal, offcanvas, dropdown, accordion, popover, tooltip, and carousel.</article>
+      <article class="bn-demo-card p-3 p-lg-4 mb-3">
+        <h3 class="h6 text-uppercase text-secondary mb-3">Dropdowns</h3>
+        <div class="bn-demo-surface p-3 p-lg-4 d-flex flex-wrap gap-2 align-items-start">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Environment
+            </button>
+            <ul class="dropdown-menu">
+              <li><h6 class="dropdown-header">Switch context</h6></li>
+              <li><a class="dropdown-item" href="#">Development</a></li>
+              <li><a class="dropdown-item" href="#">Staging</a></li>
+              <li><a class="dropdown-item active" href="#">Production</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Manage environments</a></li>
+            </ul>
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-outline-primary">Query actions</button>
+            <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle query actions</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Save as snippet</a></li>
+              <li><a class="dropdown-item" href="#">Run explain plan</a></li>
+              <li><a class="dropdown-item" href="#">Export CSV</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="bn-demo-card bn-placeholder p-4">Placeholder for modal, offcanvas, accordion, popover, tooltip, and carousel.</article>
     </section>
   </main>
 
