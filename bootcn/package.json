@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "build:kit": "node scripts/build-kit.mjs"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.11",

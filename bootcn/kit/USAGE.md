@@ -1,53 +1,31 @@
-# Bootcn Reusable Kit
+# Bootcn Reusable Kit (Manual Guide)
 
-This folder is generated so you can copy only a few files into a future project.
+Use this kit by copying static files only. No build or export scripts are required.
 
-## Generate kit files
-
-From the Bootcn project root:
-
-npm run build:kit
-
-## One-command export to another project
-
-You can generate and copy in one command:
-
-npm run build:kit -- --out ../MyProject/wwwroot/bootcn
-
-Also supported:
-- npm run build:kit -- ../MyProject/wwwroot/bootcn
-- BOOTCN_OUT=../MyProject/wwwroot/bootcn npm run build:kit
-
-This exports these files directly to the destination folder:
-- bootcn-theme.css
-- bootstrap.bundle.min.js
-- bootcn-init.js
-- USAGE.md
-
-This creates:
-- kit/bootcn-theme.css
-- kit/bootstrap.bundle.min.js
-- kit/bootcn-init.js
-
-## What to copy
+## Files to copy
 
 ### Full component support (recommended)
 
-Copy these 3 files into the target project, for example:
+Copy these files into your target app:
+- bootcn-theme.css
+- bootstrap.bundle.min.js
+- bootcn-init.js
+
+### CSS-only mode
+
+Copy only:
+- bootcn-theme.css
+
+Use CSS-only mode if you do not need interactive Bootstrap behaviors such as modal, dropdown, offcanvas, tooltip, popover, collapse, or toast.
+
+## Generic HTML setup
+
+Place the copied files in your static assets folder, for example:
 - assets/bootcn-theme.css
 - assets/bootstrap.bundle.min.js
 - assets/bootcn-init.js
 
-### CSS-only mode (no interactive Bootstrap JS)
-
-Copy only:
-- assets/bootcn-theme.css
-
-Use this if the target project does not need dropdown, modal, offcanvas, tooltip, popover, collapse, or toast behavior.
-
-## HTML setup in the target project
-
-Add these tags:
+Then add:
 
 ```html
 <link rel="stylesheet" href="assets/bootcn-theme.css">
@@ -56,7 +34,7 @@ Add these tags:
 <script src="assets/bootcn-init.js"></script>
 ```
 
-Optional font setup (for exact visual match):
+Optional fonts for exact visual parity:
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,16 +42,16 @@ Optional font setup (for exact visual match):
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 ```
 
-## Blazor setup
+## Blazor-first setup
 
-Copy the same generated files into your Blazor static assets folder:
+Copy files to:
 - wwwroot/bootcn/bootcn-theme.css
 - wwwroot/bootcn/bootstrap.bundle.min.js
 - wwwroot/bootcn/bootcn-init.js
 
 ### Blazor Web App (.NET 8+, App.razor)
 
-Add inside the app shell head/body script sections:
+Add references in the app shell:
 
 ```razor
 <link rel="stylesheet" href="bootcn/bootcn-theme.css" />
@@ -82,15 +60,26 @@ Add inside the app shell head/body script sections:
 <script src="bootcn/bootcn-init.js"></script>
 ```
 
-### Blazor Server (Pages/_Host.cshtml) or Blazor WebAssembly (wwwroot/index.html)
+### Blazor Server (Pages/_Host.cshtml)
 
-Add the same 4 tags in the host page.
+Add the same tags in the host page.
 
-If your Blazor app already includes Bootstrap from the default template, remove that default Bootstrap CSS/JS include to avoid double-loading and style conflicts.
+### Blazor WebAssembly (wwwroot/index.html)
 
-## Notes
+Add the same tags in the host page.
 
-- The CSS bundle already includes Bootstrap component styles plus Bootcn overrides.
-- The Bootstrap JS bundle enables interactive components like modal, dropdown, offcanvas, tooltip, and popover.
-- bootcn-init.js only initializes Lucide icons when present.
-- If Lucide is not required, you can omit both the Lucide CDN script and bootcn-init.js.
+## Important checks
+
+- Remove default template Bootstrap CSS/JS to avoid double-loading conflicts.
+- Keep only one Bootstrap source active (Bootcn kit).
+- If you do not use Lucide icons, omit both the Lucide CDN script and bootcn-init.js.
+- Set dark mode at root if desired:
+
+```html
+<html lang="en" data-bs-theme="dark">
+```
+
+## Behavior note
+
+Bootstrap bundle covers component interactions (modal, dropdown, offcanvas, collapse, tabs, carousel).
+Tooltips and popovers may still need initialization in app code depending on how your page is rendered.
